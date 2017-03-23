@@ -13,14 +13,14 @@ Record your responses inside the fenced code blocks below each question.
     `campus`?
 
     ```md
-    <!-- your response here -->
+        ember generate route campus/boston
     ```
 
 1.  Suppose you have a nested route at the URL `/campus/boston`. How would you
     use the `link-to` helper to generate an appropriate link?
 
     ```md
-    <!-- your response here -->
+      {{#link-to 'campus.boston'}}Boston{{/link-to}}
     ```
 
 1.  Explain **at least** two differences between the following two route
@@ -35,7 +35,14 @@ Record your responses inside the fenced code blocks below each question.
     ```
 
     ```md
-    <!-- your response here -->
+    One of the differences in these routes are is the path, one of them should t
+
+     They are nested urls?
+     Honestly not sure how to explain this technically but, it seems that the first route will be represented in the url
+     as you would need to enter the product id specifically at the end and its a dynamic route.
+      - this dynamic route is good to use with ember data
+
+      The second route can be used with a serializer
     ```
 
 1.  Suppose we have the following route definition:
@@ -48,11 +55,12 @@ Record your responses inside the fenced code blocks below each question.
     value `'123'` inside a Route?
 
     ```md
-    <!-- your response here -->
+      I think by using a serializer?
+
     ```
 
 1.  Inside a template, how do we reference data provided by a Route?
 
     ```md
-    <!-- your response here -->
+    it uses the model method that was defined in the route.
     ```
